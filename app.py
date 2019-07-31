@@ -2,12 +2,12 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def home_page():
-	favoritefood = ['everythig','everysing','everydrink','Rani melzer']
-	return render_template(
-		"index.html",
-		favoritefood=favoritefood,
-		opposite_day=True)
+def home():
+    return render_template('hello.html')
+
+@app.route('/hello')
+def hello():
+    return render_template('hello.html', n = 'something')
 
 if __name__ == '__main__':
    app.run(debug = True)

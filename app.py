@@ -1,18 +1,14 @@
-from databases import *
-from flask import Flask,render_template, url_for 
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    return render_template(
-        'home.html')
+def home_page():
+	favoritefood = ['everythig','everysing','everydrink']
+	return render_template(
+		"index.html",
+		favoritefood=favoritefood,
+		opposite_day=True)
 
-@app.route('/student/<int:student_id>')
-def display_student(student_id):
-    return render_template(
-        'student.html' , id_number=student_id,
-    student=query_by_id(student_id))
-
- 
 if __name__ == '__main__':
-    app.run(debug=True, port = 5000)
+   app.run(debug = True)
+

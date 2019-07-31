@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-	favoritefood = ['everythig','everysing','everydrink']
+	favoritefood = ['everythig','everysing','everydrink','Rani melzer']
 	return render_template(
 		"index.html",
 		favoritefood=favoritefood,

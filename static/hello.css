@@ -1,0 +1,97 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-image: url("project.jpg");
+
+}
+
+
+
+ 
+.hi:hover {
+color:yellow;
+font:fantasy;
+font-size:24;
+position:absolute;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+ 
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color:grey;
+  padding: 50px;
+  font-size: 20px;
+  box-sizing: border-box;
+
+}
+.pic1{
+	  background-image: url("background-to-site-2.jpg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+.pic2{
+    background-image: url("proj1.jpg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+}
+
+
+}
+.button {
+  background-color: #B3B9B9;
+  border: none;
+  color: white;
+  padding: 50px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 2px;
+  cursor: pointer;
+}
+.glow {
+  font-size: 80px;
+  color: #993333;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #F31E1E, 0 0 20px #F31E1E, 0 0 30px #cc0000, 0 0 40px #cc0000, 0 0 50px #cc0000, 0 0 60px #cc0000, 0 0 70px #cc0000;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #F31E1E, 0 0 30px #cc0000, 0 0 40px #cc0000, 0 0 50px #cc0000, 0 0 60px #cc0000, 0 0 70px #cc0000, 0 0 80px #cc0000;
+  }
+}
+ 
